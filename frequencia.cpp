@@ -31,3 +31,18 @@ vector<string> palavrasMaisFrequentes(vector<string>& palavras, int k) {
 
     return resultado;
 }
+
+int main() {
+    vector<string> palavras = {"banana", "maçã", "banana", "laranja", "maçã", "banana"};
+    int k = 2;
+
+    vector<string> resultado = palavrasMaisFrequentes(palavras, k);
+
+    for (const string& palavra : resultado) {
+        cout << palavra << " ";
+    }
+    cout << endl;
+
+    return 0;
+}
+
